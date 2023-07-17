@@ -42,19 +42,21 @@ const Weather = () => {
         </tr>
         <tr>
           <td>Temperature: </td>
-          <td>{weather?.current?.temp_f}</td>
+          <td>{weather?.current.temp_f} degrees Fahrenheit</td>
         </tr>
         <tr>
           <td>Feels Like: </td>
-          <td>{weather?.current?.feelslike_f}</td>
+          <td>{weather?.current?.feelslike_f} degrees Fahrenheit</td>
         </tr>
         <tr>
           <td>Humidity: </td>
-          <td>{weather?.current?.humidity}</td>
+          <td>{weather?.current?.humidity}%</td>
         </tr>
         <tr>
           <td>Wind Speed: </td>
-          <td>{weather?.current?.wind_mph}</td>
+          <td>
+            {weather?.current?.wind_mph} mph {weather?.current?.wind_dir}
+          </td>
         </tr>
       </table>
     </div>
